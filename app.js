@@ -95,7 +95,6 @@ function startConversion() {
     formData.append("file", selectedFile);
     formData.append("artist", selectedVoiceModel);
 
-
     fetch("/convert", {
         method: "POST",
         body: formData
